@@ -97,19 +97,26 @@
             </form>
             <p class="form-note"><em>Nota: Los comentarios serán moderados por un administrador antes de ser visibles. Este formulario requiere un sistema en el lado del servidor para su gestión.</em></p>
 
-            <div class="approved-comments">
-                <h3>Comentarios Aprobados:</h3>
-                <div class="comment-item">
-                    <p class="comment-author"><strong>María G.</strong></p>
-                    <p class="comment-text">"¡Excelente iniciativa! Es fundamental concientizar a los jóvenes sobre el cuidado del ambiente."</p>
-                    <span class="comment-date">03 de Junio, 2025</span>
-                </div>
-                <div class="comment-item">
-                    <p class="comment-author"><strong>Juan P.</strong></p>
-                    <p class="comment-text">"Gracias al Instituto Barranqueras por organizar estas actividades tan importantes."</p>
-                    <span class="comment-date">02 de Junio, 2025</span>
-                </div>
-                </div>
+            <section id="comentarios" class="content-section">
+            <h2>Comentarios</h2>
+            <p>Aquí puedes dejar tus comentarios sobre la página o el Día del Ambiente. ¡Tu opinión es importante!</p>
+            <div class="giscus"></div>
+            <script src="https://giscus.app/client.js"
+                    data-repo="[REPLACE_WITH_YOUR_GITHUB_USERNAME_OR_ORG]/[REPLACE_WITH_YOUR_REPO_NAME]"
+                    data-repo-id="[REPLACE_WITH_YOUR_REPO_ID]"
+                    data-category="[REPLACE_WITH_YOUR_DISCUSSION_CATEGORY_NAME]"
+                    data-category-id="[REPLACE_WITH_YOUR_DISCUSSION_CATEGORY_ID]"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="light"
+                    data-lang="es"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            <p class="form-note"><em>Los comentarios se gestionan a través de GitHub Discussions. La moderación se realiza en la interfaz de GitHub.</em></p>
         </section>
     </main>
 
