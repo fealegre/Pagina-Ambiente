@@ -1,0 +1,287 @@
+/* Estilos Generales */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #28a745; /* Verde fuerte */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid #218838; /* Verde más oscuro */
+}
+
+header .logo img {
+    max-height: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que los ítems se envuelvan en pantallas pequeñas */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    border-radius: 3px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hero {
+    background: #e6ffe6; /* Verde claro */
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    color: #28a745;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.content-section {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.content-section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    color: #28a745;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.activity-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.activity-item h3 {
+    color: #0056b3; /* Azul para títulos de actividad */
+    margin-top: 0;
+}
+
+/* Forms (Registration and Comments) */
+.form-section {
+    background-color: #eaf7ed; /* Verde muy claro para secciones de formulario */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #d4edda;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-section textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-section button {
+    background-color: #007bff; /* Azul botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+.form-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Approved Comments Section */
+.approved-comments {
+    margin-top: 40px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.approved-comments h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-item {
+    background-color: #f0fdf0; /* Un verde muy sutil */
+    border: 1px solid #e0ffe0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    margin-bottom: 5px;
+}
+
+.comment-date {
+    font-size: 0.85em;
+    color: #777;
+    text-align: right;
+    display: block;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #66b3ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
