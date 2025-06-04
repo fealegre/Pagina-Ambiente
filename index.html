@@ -65,7 +65,7 @@
         <section id="visitantes" class="form-section">
             <h2>Regístrate como Visitante</h2>
             <p>¡Nos encantaría saber quién nos visita! Por favor, completa el siguiente formulario para registrarte.</p>
-            <form action="YOUR_SERVER_SIDE_SCRIPT_FOR_REGISTRATION.php" method="POST">
+            <form name="contacto" netlify>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -80,24 +80,7 @@
             <p class="form-note"><em>Nota: Este formulario requiere un sistema en el lado del servidor para almacenar los datos.</em></p>
         </section>
 
-        <section id="comentarios" class="form-section">
-            <h2>Deja tu Comentario</h2>
-            <p>Tus opiniones son importantes para nosotros. Deja un comentario y lo revisaremos para su publicación.</p>
-            <form action="YOUR_SERVER_SIDE_SCRIPT_FOR_COMMENTS.php" method="POST">
-                <label for="nombre-comentario">Tu Nombre:</label>
-                <input type="text" id="nombre-comentario" name="nombre_comentario" required>
-
-                <label for="email-comentario">Tu Correo Electrónico (no se publicará):</label>
-                <input type="email" id="email-comentario" name="email_comentario" required>
-
-                <label for="mensaje-comentario">Tu Mensaje:</label>
-                <textarea id="mensaje-comentario" name="mensaje_comentario" rows="5" required></textarea>
-
-                <button type="submit">Enviar Comentario</button>
-            </form>
-            <p class="form-note"><em>Nota: Los comentarios serán moderados por un administrador antes de ser visibles. Este formulario requiere un sistema en el lado del servidor para su gestión.</em></p>
-
-            <section id="comentarios" class="content-section">
+        <section id="comentarios" class="content-section">
             <h2>Comentarios</h2>
             <p>Aquí puedes dejar tus comentarios sobre la página o el Día del Ambiente. ¡Tu opinión es importante!</p>
             <div class="giscus"></div>
